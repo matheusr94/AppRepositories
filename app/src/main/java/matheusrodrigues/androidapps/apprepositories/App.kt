@@ -3,6 +3,7 @@ package matheusrodrigues.androidapps.apprepositories
 import android.app.Application
 import matheusrodrigues.androidapps.apprepositories.data.di.DataModule
 import matheusrodrigues.androidapps.apprepositories.domain.di.DomainModule
+import matheusrodrigues.androidapps.apprepositories.presentation.di.PresentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -17,5 +18,6 @@ class App : Application() {
 
         DataModule.load()
         DomainModule.load()
+        PresentationModule.load()
     }
 }
